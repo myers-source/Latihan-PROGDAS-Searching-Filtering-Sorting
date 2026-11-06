@@ -1,0 +1,26 @@
+// LATIHAN 1
+
+const nilaiUjian =;
+
+if (nilaiUjian.includes(85)) 
+
+console.log(`Nilai 85 ditemukan pada indeks ke-${nilaiUjian.indexOf(85)}`);
+console.log("Daftar nilai yang lulus:", nilaiUjian.filter(x => x >= 75));
+
+// LATIHAN 2
+
+const produk = ["Laptop", "Mouse", "Keyboard", "Monitor", "Headset"];
+
+if (produk.includes("Keyboard")) 
+
+console.log(`Produk 'Keyboard' ditemukan pada indeks ke-${produk.indexOf("Keyboard")}`);
+console.log("Produk dengan nama > 5 karakter:", produk.filter(x => x.length > 5));
+
+// LATIHAN 3
+
+const suhu = [-3, 5, 0, -12, 8, 15, -1, 22];
+
+if (suhu.includes(0)) 
+
+console.log(`Suhu 0 ditemukan pada indeks ke-${suhu.indexOf(0)}`);
+console.log("Daftar suhu positif:", suhu.filter(x => x > 0));
