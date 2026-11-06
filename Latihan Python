@@ -1,0 +1,27 @@
+# LATIHAN 1
+
+nilai_ujian = [60, 85, 40, 90, 75, 50, 95]
+
+if 85 in nilai_ujian:
+
+    print(f"Nilai 85 ditemukan pada indeks ke-{nilai_ujian.index(85)}")
+print("Daftar nilai yang lulus:", [x for x in nilai_ujian if x >= 75])
+
+# LATIHAN 2
+produk = ["Laptop", "Mouse", "Keyboard", "Monitor", "Headset"]
+
+if "Keyboard" in produk:
+
+    print(f"Produk 'Keyboard' ditemukan pada indeks ke-{produk.index('Keyboard')}")
+print("Produk dengan nama > 5 karakter:", [x for x in produk if len(x) > 5])
+
+# LATIHAN 3
+
+suhu = [-3, 5, 0, -12, 8, 15, -1, 22]
+
+if 0 in suhu:
+
+    print(f"Suhu 0 ditemukan pada indeks ke-{suhu.index(0)}")
+print("Daftar suhu positif:", [x for x in suhu if x > 0])
+
+bismilah bener
