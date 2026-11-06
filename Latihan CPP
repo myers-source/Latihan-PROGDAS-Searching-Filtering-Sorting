@@ -1,0 +1,65 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main() { 
+
+// semua jawaban di awali dengan ini
+
+    // LATIHAN 1
+    vector<int> nilai_ujian = {60, 85, 40, 90, 75, 50, 95};
+    
+    for (int i = 0; i < nilai_ujian.size(); i++) {
+        if (nilai_ujian[i] == 85) {
+            cout << "Nilai 85 ditemukan pada indeks ke-" << i << endl;
+        }
+    }
+    
+    cout << "Daftar nilai yang lulus: ";
+    for (int x : nilai_ujian) {
+        if (x >= 75) {
+            cout << x << " ";
+        }
+    }
+    cout << endl << endl;
+
+    // LATIHAN 2
+    vector<string> produk = {"Laptop", "Mouse", "Keyboard", "Monitor", "Headset"};
+    
+    for (int i = 0; i < produk.size(); i++) {
+        if (produk[i] == "Keyboard") {
+            cout << "Produk 'Keyboard' ditemukan pada indeks ke-" << i << endl;
+        }
+    }
+    
+    cout << "Produk dengan nama > 5 karakter: ";
+    for (string x : produk) {
+        if (x.length() > 5) {
+            cout << x << " ";
+        }
+    }
+    cout << endl << endl;
+
+    // LATIHAN 3
+    vector<int> suhu = {-3, 5, 0, -12, 8, 15, -1, 22};
+    
+    for (int i = 0; i < suhu.size(); i++) {
+        if (suhu[i] == 0) {
+            cout << "Suhu 0 ditemukan pada indeks ke-" << i << endl;
+        }
+    }
+    
+    cout << "Daftar suhu positif: ";
+    for (int x : suhu) {
+        if (x > 0) {
+            cout << x << " ";
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
+
